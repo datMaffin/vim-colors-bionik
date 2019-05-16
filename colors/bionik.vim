@@ -78,3 +78,11 @@ exe 'hi PmenuSel         term=none       ctermfg=none        ctermbg=12         
 exe 'hi ALEErrorSign   term=none       ctermfg=1           ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .       ' cterm=bold,reverse        gui=bold,reverse'
 exe 'hi ALEWarningSign term=none       ctermfg=3           ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .       ' cterm=bold,reverse        gui=bold,reverse'
 exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        guifg=' . DarkBlue  .' guibg=' . NoneBG .       ' cterm=bold,reverse        gui=bold,reverse'
+
+
+" Highlight linking
+
+" Ruby
+"Ruby
+hi! link rubyModule Statement
+hi! link rubyClass Statement
