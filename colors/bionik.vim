@@ -83,6 +83,4 @@ exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        g
 " Highlight linking
 
 " Ruby
-"Ruby
-hi! link rubyModule Statement
-hi! link rubyClass Statement
+hi! link rubyDefine Statement
