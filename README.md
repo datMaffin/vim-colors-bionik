@@ -1,6 +1,9 @@
 # vim-colors-bionik
 A light vim colorscheme with green comments and familiar keyword colors.
 
+![screenshot](Screenshot.png)
+MacVim on the left; iTerm on the right with correct ANSI colors.
+
 ## Goals
 * light colorscheme
 * green comments
