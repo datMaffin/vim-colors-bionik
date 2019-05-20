@@ -81,6 +81,8 @@ exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        g
 
 
 " Highlight linking
+hi! link CocErrorSign ALEErrorSign
+hi! link CocWarningSign ALEWarningSign
 
 " Ruby
 hi! link rubyDefine Statement
