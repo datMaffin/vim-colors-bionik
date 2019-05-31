@@ -49,7 +49,6 @@ exe 'hi Folded           term=none       ctermfg=6           ctermbg=none       
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=7                                  guibg=' . LighterGray. ' cterm=none                gui=none'
 exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=underline           gui=underline'
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=7           guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=reverse             gui=none'
-exe 'hi QuickfixLine     term=none                                                                                               cterm=underline           gui=underline'
 exe 'hi MatchParen       term=reverse    ctermfg=none        ctermbg=14                                 guibg=' . LightCyan .  ' cterm=none                gui=none'
 exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none                                                        cterm=reverse             gui=reverse'
 exe 'hi Underlined       term=underline  ctermfg=none        ctermbg=none                                                        cterm=underline           gui=underline'
