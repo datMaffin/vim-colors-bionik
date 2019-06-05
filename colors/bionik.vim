@@ -43,7 +43,7 @@ let LightBlue      = '#428ecf'
 
 exe 'hi Normal           term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=none                gui=none'
 exe 'hi LineNr           term=none       ctermfg=none        ctermbg=7           guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none                gui=none'
-exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=15          guifg=' . NoneFG .   ' guibg=' . LighterGray .' cterm=bold,underline      gui=bold,underline'
+exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=15          guifg=' . NoneFG .   ' guibg=' . LighterGray .' cterm=bold,underline      gui=bold'
 exe 'hi FoldColumn       term=none       ctermfg=6           ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse             gui=reverse'
 exe 'hi Folded           term=none       ctermfg=6           ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse,italic      gui=reverse,italic'
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=7                                  guibg=' . LighterGray. ' cterm=none                gui=none'
