@@ -84,8 +84,8 @@ exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        g
 " On macOS/MacVim: Change the selection color on focus change (but only if this colorscheme is active).
 "
 if has("gui_macvim") && !exists("s:augroups_defined")
-  au FocusLost * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSecondarySelectedControlColor | endif
-  au FocusGained * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSelectedTextBackgroundColor | endif
+  au FocusLost * if exists("colors_name") && colors_name == "bionik" | hi Visual guifg=none guibg=MacSecondarySelectedControlColor gui=none | endif
+  au FocusGained * if exists("colors_name") && colors_name == "bionik" | hi Visual guifg=none guibg=MacSelectedTextBackgroundColor gui=none | endif
 
   let s:augroups_defined = 1
 endif
