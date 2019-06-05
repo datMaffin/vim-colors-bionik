@@ -50,7 +50,6 @@ exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=7          
 exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=underline           gui=none'
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=7           guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=reverse             gui=none'
 exe 'hi MatchParen       term=reverse    ctermfg=none        ctermbg=14                                 guibg=' . LightCyan .  ' cterm=none                gui=none'
-exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none                                                        cterm=reverse             gui=reverse'
 exe 'hi Underlined       term=underline  ctermfg=none        ctermbg=none                                                        cterm=underline           gui=underline'
 exe 'hi Error            term=none       ctermfg=1           ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=bold,reverse        gui=bold,reverse'
 exe 'hi ErrorMsg         term=none       ctermfg=1           ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=reverse             gui=reverse'
@@ -84,10 +83,12 @@ exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        g
 " On macOS/MacVim: Change the selection color on focus change (but only if this colorscheme is active).
 "
 if has("gui_macvim") && !exists("s:augroups_defined")
-  au FocusLost * if exists("colors_name") && colors_name == "bionik" | hi Visual guifg=none guibg=MacSecondarySelectedControlColor gui=none | endif
-  au FocusGained * if exists("colors_name") && colors_name == "bionik" | hi Visual guifg=none guibg=MacSelectedTextBackgroundColor gui=none | endif
+  au FocusLost * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSecondarySelectedControlColor | endif
+  au FocusGained * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSelectedTextBackgroundColor | endif
 
   let s:augroups_defined = 1
+else
+    hi Visual term=reverse ctermfg=none ctermbg=none cterm=reverse gui=reverse
 endif
 
 " Highlight linking
