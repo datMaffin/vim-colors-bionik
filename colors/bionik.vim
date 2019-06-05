@@ -47,7 +47,7 @@ exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=15         
 exe 'hi FoldColumn       term=none       ctermfg=6           ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse             gui=reverse'
 exe 'hi Folded           term=none       ctermfg=6           ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse,italic      gui=reverse,italic'
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=7                                  guibg=' . LighterGray. ' cterm=none                gui=none'
-exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=underline           gui=underline'
+exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=underline           gui=none'
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=7           guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=reverse             gui=none'
 exe 'hi MatchParen       term=reverse    ctermfg=none        ctermbg=14                                 guibg=' . LightCyan .  ' cterm=none                gui=none'
 exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none                                                        cterm=reverse             gui=reverse'
