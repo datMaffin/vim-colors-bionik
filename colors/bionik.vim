@@ -80,10 +80,17 @@ exe 'hi ALEErrorSign   term=none       ctermfg=1           ctermbg=none        g
 exe 'hi ALEWarningSign term=none       ctermfg=3           ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .       ' cterm=bold,reverse        gui=bold,reverse'
 exe 'hi ALEInfoSign    term=none       ctermfg=4           ctermbg=none        guifg=' . DarkBlue  .' guibg=' . NoneBG .       ' cterm=bold,reverse        gui=bold,reverse'
 
+"
+" On macOS/MacVim: Change the selection color on focus change (but only if this colorscheme is active).
+"
+if has("gui_macvim") && !exists("s:augroups_defined")
+  au FocusLost * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSecondarySelectedControlColor | endif
+  au FocusGained * if exists("colors_name") && colors_name == "bionik" | hi Visual guibg=MacSelectedTextBackgroundColor | endif
+
+  let s:augroups_defined = 1
+endif
 
 " Highlight linking
 hi! link CocErrorSign ALEErrorSign
 hi! link CocWarningSign ALEWarningSign
 
-" Ruby
-hi! link rubyDefine Statement
