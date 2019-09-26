@@ -9,12 +9,12 @@ MacVim on the left; iTerm on the right with correct ANSI colors.
 * green comments
 * familiar keyword colors 
     - similar to Xcode, light visual studio 2010
-* uses italic and bold and underlined in the terminal
+* uses italic, bold and underlined in the terminal
 * terminal support
     - use the in the terminal defined (16) ANSI colors
     - provide a good experience on a variety of selected colors
 * GUI support
-    - use my specific colors for the different
+    - always uses the correct colors (see screenshot above)
 
 ## Recommendations
 ### Font
@@ -48,4 +48,4 @@ Use for the background white `#ffffff` and for the foreground black `#000000`
 
 
 ## FAQ
-* [Italic in Terminal.app and tmux](https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be): Without the "Configure vim" chapter;  `set termguicolors` has nothing to do with the italics.
+* [Italic in iTerm.app and tmux](https://medium.com/@dubistkomisch/how-to-actually-get-italics-and-true-colour-to-work-in-iterm-tmux-vim-9ebe55ebc2be): Without the "Configure vim" chapter;  `set termguicolors` has nothing to do with the italics.
