@@ -22,6 +22,7 @@ Use a font with real italic letters like
 * [Mononoki](http://madmalik.github.io/mononoki/)
 * Consolas
 * [Fantasque Mono](https://github.com/belluzj/fantasque-sans)
+* [Inconsolata LGC](https://github.com/MihailJP/Inconsolata-LGC)
 
 ### Terminal Colors
 
