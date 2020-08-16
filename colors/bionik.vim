@@ -69,7 +69,7 @@ exe 'hi Special          term=none       ctermfg=5           ctermbg=none       
 exe 'hi Title            term=underline  ctermfg=4           ctermbg=none        guifg=' . DarkBlue .  ' guibg=' . NoneBG .    ' cterm=underline,bold      gui=underline,bold'
 exe 'hi PreProc          term=none       ctermfg=3          ctermbg=none         guifg=' . DarkYellow .' guibg=' . NoneBG .    ' cterm=none                gui=none'
 exe 'hi Type             term=bold       ctermfg=5           ctermbg=none        guifg=' . DarkMagenta.' guibg=' . NoneBG .    ' cterm=bold,italic         gui=bold,italic'
-exe 'hi Pmenu            term=none       ctermfg=none        ctermbg=7           guifg=' . NoneFG    .' guibg=' . Gray .       ' cterm=none                gui=none'
+exe 'hi Pmenu            term=none       ctermfg=none        ctermbg=7           guifg=' . NoneFG    .' guibg=' . LightGray .  ' cterm=none                gui=none'
 exe 'hi PmenuSel         term=none       ctermfg=none        ctermbg=12          guifg=' . NoneFG    .' guibg=' . LightBlue .  ' cterm=none                gui=none'
 
 " Vim features (:help highlight-groups) or (:help hl-...)
