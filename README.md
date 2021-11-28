@@ -2,24 +2,25 @@
 A light vim colorscheme with green comments and familiar keyword colors.
 
 ![screenshot](Screenshot.png)
-MacVim on the left; iTerm on the right with correct ANSI colors.
+Terminal on the left with corresponding ANSI colors set; GUI vim on the right.
 
 ## Goals
-* light colorscheme
+* light color scheme
 * green comments
 * familiar keyword colors 
-    - similar to Xcode, light visual studio 2010
+    - similar to light Xcode and Visual Studio 2010
 * uses italic, bold and underlined in the terminal
 * terminal support
-    - use the in the terminal defined (16) ANSI colors
-    - provide a good experience on a variety of selected colors
+    - uses the (16) ANSI colors as defined by the terminal
+    - tries to provide a good experience on a variety of selected colors
 * GUI support
-    - always uses the correct colors (see screenshot above)
+    - uses the colors noted below if used in a GUI vim
 
 ## Recommendations
 ### Font
 Use a font with real italic letters like
 * [Mononoki](http://madmalik.github.io/mononoki/)
+* [Monofoki](https://github.com/datMaffin/monofoki) (modified Mononoki)
 * Consolas
 * [Fantasque Mono](https://github.com/belluzj/fantasque-sans)
 * [Inconsolata LGC](https://github.com/MihailJP/Inconsolata-LGC/releases)
@@ -30,7 +31,7 @@ Use for the background white `#ffffff` and for the foreground black `#000000`
 
 | ANSI Code | Color                     | used by the colorscheme |
 |-----------|---------------------------|-------------------------|
-| 0         | Black: `#000000`          | no                      |
+| 0         | Black: `#252525`          | no                      |
 | 1         | Red: `#e60000`            | yes                     |
 | 2         | Green: `#00b800`          | yes                     |
 | 3         | Yellow: `#e66e00`         | yes                     |
